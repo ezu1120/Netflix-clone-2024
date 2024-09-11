@@ -1,0 +1,64 @@
+.banner {
+    margin-top: 0; /* No negative margin */
+    height: 100vh; /* Full viewport height */
+    margin-bottom: 0; /* Ensure no overlap with footer */
+    color: white;
+    object-fit: cover; /* Ensure background image covers the banner area */
+    position: relative;
+    overflow: hidden; /* Prevent any overflow */
+}
+
+.banner_contents {
+    margin-left: 30px;
+    padding-top: 30vh; /* Adjust padding to bring content down */
+    z-index: 1; /* Ensure content is above the background */
+    position: relative;
+}
+
+.banner_title {
+    font-size: 3rem;
+    font-weight: 800;
+    padding-bottom: 0.3rem;
+}
+
+.banner_description {
+    width: 45rem;
+    line-height: 1.3;
+    padding: 1rem;
+    font-size: 1rem;
+    max-width: 360px;
+    height: auto;
+    overflow: hidden; /* Ensure text is truncated if necessary */
+}
+
+.banner_button {
+    cursor: pointer;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border-radius: 0.2vw;
+    padding: 1rem 3rem;
+    margin-right: 2rem;
+    background-color: rgba(51, 51, 51, 0.5);
+}
+
+.play {
+    color: #000;
+    background-color: #fff;
+}
+
+.banner_fadeBottom {
+    height: 40vh; /* Reduced height to prevent overlap */
+    background-image: linear-gradient(
+        180deg,
+        transparent,
+        rgba(37, 37, 37, 0.91),
+        #111
+    );
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 0;
+}
